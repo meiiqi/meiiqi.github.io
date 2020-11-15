@@ -704,32 +704,11 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0px;  
 }
 
-/* Container needed to position the button. Adjust the width as needed */
-/* .btn-container {
-  position: relative;
-  width: 50%;
-} */
-
-/* Make the image responsive */
-/* .btn-container img {
-  width: 100%;
-  height: auto;
-} */
-
 /* Style the button and place it in the middle of the container/image */
 .project-btn {
-  /* position: absolute;
-  top: 50%;
-  left: 50%; */
   background-color: #555;
-  /* transform: translate(-40%, -50%);
-  -ms-transform: translate(-40%, -50%); */
   color: white;
-  /* font-size: 16px;
-  padding: 12px 24px; */
-  /* border: none; */
   cursor: pointer;
-  /* border-radius: 5px; */
 }
 
 .project-btn:hover {
@@ -744,29 +723,47 @@ font header .navbar-default .navbar-nav li a:hover {
 .project-visual {
   margin-top: 80px;
 }
-/* #btn_1 {
-  transform: translate(-40%, -50%);
-  -ms-transform: translate(-40%, -50%);
-}
 
-#btn_2 {
-  transform: translate(-65%, -140%);
-  -ms-transform: translate(-65%, -140%);
-} */
+@keyframes swipe_2 {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  90% {
+    transform: translateX(-300%);
+  }
+}
 
 @keyframes swipe {
   0% {
     transform: translateX(0%);
   }
-  100% {
+  13% {
     transform: translateX(-100%);
   }
-  /* 66% {
+  26% {
     transform: translateX(-200%);
   }
-  100% {
+  39% {
     transform: translateX(-300%);
-  } */
+  }
+  52% {
+    transform: translateX(-400%);
+  }
+  65% {
+    transform: translateX(-500%);
+  }
+  78% {
+    transform: translateX(-600%);
+  }
+  91% {
+    transform: translateX(-700%);
+  }
 }
 
 /* @import url("https://fonts.googleapis.com/css?family=Roboto:900"); */
@@ -966,7 +963,7 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: -webkit-transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-  /* animation: swipe 4s ease-in-out 3s 1 normal; */
+  /* animation: swipe_2 16s ease-in-out 3s 1 normal; */
   /* animation-name: swipe;
   animation-duration: 9s;
   animation-timing-function: ease-in-out;
@@ -1333,7 +1330,7 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: -webkit-transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-  /* animation: swipe 4s ease-in-out 3s 1 normal; */
+  /* animation: swipe 32s ease-in-out 3s 1 normal; */
 }
 .carousel2__track .carousel2__slide {
   display: block;
