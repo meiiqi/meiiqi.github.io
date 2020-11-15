@@ -11,8 +11,6 @@ $(document).ready(function(){
 	});
 
 
-
-
 	$("#clients-logo").owlCarousel({
 		autoPlay: 3000,
 		items : 5,
