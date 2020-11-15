@@ -41,7 +41,9 @@ $(document).ready(function(){
 	$('.counter').counterUp({
         delay: 10,
         time: 1000
-    });
+	});
+	
+	// $('#school_ccom206').onclick()
 
 
 });
