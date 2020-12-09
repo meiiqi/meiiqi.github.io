@@ -322,7 +322,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .testimonial-carousel .home-img p {
   padding-bottom: 0;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 20px;
   color: #353241;
 }
@@ -704,6 +704,7 @@ font header .navbar-default .navbar-nav li a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 15px;
 }
+
 
 .home-subitem {
   border: 1px solid #DEDEDE;
@@ -1674,8 +1675,11 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .timeline-content {
   width: 95%;
-  padding: 0 15px;
-  color: #666
+  padding: 20px;
+  color: #666;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  margin: 0 20px;
 }
 
 .timeline-content h3 {
@@ -1697,6 +1701,14 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #888;
 }
 
+.timeline-content img {
+  margin-bottom: 10px;
+}
+
+.timeline-content .subtitle {
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
 
 @media screen and (max-width: 768px) {
   .timeline-container:before {
@@ -1721,7 +1733,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .timeline-container {
   width: 80%;
-  padding: 50px 0;
+  padding: 50px 10px;
   margin: 50px auto;
   position: relative;
   overflow: hidden;
